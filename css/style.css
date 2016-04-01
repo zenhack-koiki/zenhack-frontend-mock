@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+html {
+	font-size: 62.5%;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	color: #666;
+	text-align: center;
+	font-size: 1.8rem;
+	font-family: 'Telex', "Hiragino Kaku Gothic ProN", Meiryo, san-serif;
+}
+
+/* color schema */
+.akabeni {
+	color: #CB4042;
+}
+
+.sora {
+	color: #58B2DC;
+}
+
+/* logo part */
+.logo {
+	position: fixed;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  padding: 2.8rem 2.8rem;
+  z-index: 101;
+}
+
+.logo a {
+	width: 200px;
+  height: 40px;
+  display: block;
+  background-image: none, url("../images/tokyo-logo-s.png");
+  background-size: cover;
+}
+
+nav {
+	position: fixed;
+	text-align: right;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  padding-right: 3.4rem;
+  padding-top: 2.6rem;
+  z-index: 100;
+}
+
+nav .humberger {
+	width: 40px;
+  height: 40px;
+  padding-top: 10px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+nav .humberger .rentagle1,
+nav .humberger .rentagle2,
+nav .humberger .rentagle3
+ {
+	display: block;
+  width: 40px;
+  height: 4px;
+  background: #58B2DC;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+}
+
+nav .humberger .rentagle2 {
+	top: 20px;
+	left: 10px;
+	width: 20px;
+	background-color: #CB4042;
+}
+
+nav .humberger .rentagle3 {
+	top: 30px;
+	left: 10px;
+	width: 20px;
+}
+
+nav .humberger .rentagle2:hover,
+nav .humberger .rentagle3:hover {
+	width: 40px;
+	left: 0;
+}
+
+.menubar {
+	position: fixed;	
+	top: 0;
+  left: 0;
+  height: 120px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+}
+
+/* header */
+.header {
+	padding: 80px 30px 80px;
+	min-height: 360px;
+}
+
+.site-title {
+	margin: 100px 0 40px;
+	font-size: 3.2rem;
+}
+
+.site-description {
+	margin-bottom: 50px;
+	color: #888;
+}
+
+/* about */
+.about {
+	padding: 80px 30px;
+	background-color: #D7C4BB;
+	color: #333;
+}
+
+.hometown {
+	padding: 80px 30px;
+	background-color: #91AD70;
+	color: #333;
+}
+
+.hometown-map {
+	width: 100%;
+	background-color: #fff;
+}
+
+.heading {
+	position: relative;
+	display: inline-block;
+	margin: 30px 0 15px;
+	padding-bottom: 15px;
+	letter-spacing: 2px;
+	font-size: 4rem;
+}
+
+.heading::before,
+.heading::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-bottom:1px solid #999;
+}
+
+.heading::before {
+	bottom: 5px;
+}
+
+.about-text,
+.description {
+	margin: 30px 0;
+	line-height: 2.5;
+	text-align: left;
+}
+
+/* favorites */
+.favorites {
+	padding: 80px 0;
+	background-color: #fff;
+	color: #333;	
+}
+
+.favorites-wrapper {
+	display: table;
+	width: 80%;
+	margin: 50px auto 0;
+	table-layout: fixed;
+}
+
+.favorite-box {
+	display: table-cell;
+}
+
+.favolite-icon {
+	width: 150px;
+	height: 150px;
+	margin-bottom: 30px;
+	font-size: 8rem;
+	line-height: 142px; /* 150px-4px*2 */
+}
+
+.favorite-title {
+	margin: 0 20px 20px;
+	font-size: 2rem;
+}
+
+.favorite-text {
+	margin: 0 20px;
+	line-height: 2;
+}
+
+/* footer */
+.footer {
+	padding: 12px 0;
+	font-size: 1.3rem;
+}
+
+/* for tablet */
+@media (max-width: 1024px) {
+	body {
+	background-image:none;
+	}
+}
+
+/* for smartphone */
+@media (max-width: 768px) {
+	.logo {
+	  padding: 0.6rem 0.6rem;
+	}
+	nav {
+	  padding-right: 0.6rem;
+	  padding-top: 0.2rem;
+	}
+	.menubar {
+	  height: 85px;
+	}
+	.site-title-sub::before{
+		display: block;
+		width: 80%;
+		margin: 10px auto;
+	}
+	.site-title-sub::after{
+		display: block;
+		width: 80%;
+		margin: 10px auto;
+	}
+	.site-title-sub {
+		font-size: 1.7rem;
+	}
+	.site-title {
+		margin-top: 80px;
+		font-size: 3.2rem;
+	}
+	.header {
+		padding-top: 60px;
+	}
+	.button:hover {
+		opacity: 1;
+	}
+	/* about */
+	.heading {
+		font-size: 2.5rem;
+	}
+	body {
+		font-size: 1.6rem;
+	}
+	.about-text,
+	.description {
+		line-height: 1.8;
+	}
+	.works-wrapper,
+	.work-box {
+		display: block;
+	}
+	.work-image {
+		display: none;
+	}
+	.work-description {
+		position: relative;
+	}
+	.work-box::after {
+		top: 0;
+		height: 100%;
+		background-size: contain;
+		background-color: #fff;
+		background-position: center;
+		transform: scaleY(1);
+	}
+	.favorites-wrapper,
+	.favorite-box {
+		display: block;
+	}
+	.favorite-icon {
+		width: 100px;
+		height: 100px;
+		font-size: 5rem;
+		line-height: 92px;
+	}
+	.favorite-box {
+		margin: 40px auto;
+	}
+	.favorite-text {
+		margin: 0;
+	}
+}
