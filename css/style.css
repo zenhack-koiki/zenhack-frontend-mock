@@ -16,6 +16,17 @@ body {
 	font-family: 'Telex', "Hiragino Kaku Gothic ProN", Meiryo, san-serif;
 }
 
+a {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    color: #1a1919;
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
 /* color schema */
 .akabeni {
 	color: #CB4042;
@@ -54,6 +65,25 @@ nav {
   z-index: 100;
 }
 
+nav ul {
+	margin-top: 15px;
+  display: block;
+  opacity: 0;
+}
+
+nav.opened ul {
+	opacity: 1;
+}
+
+nav li a {
+  display: block;
+  padding: 5px 30px 0px 30px;
+  font-size: 17px;
+  line-height: 2.2;
+  text-align: right;
+  font-size: 2.0rem;
+}
+
 nav .humberger {
 	width: 40px;
   height: 40px;
@@ -89,20 +119,24 @@ nav .humberger .rentagle3 {
 	width: 20px;
 }
 
-nav .humberger .rentagle2:hover,
-nav .humberger .rentagle3:hover {
-	width: 40px;
-	left: 0;
+nav .humberger .rentagle1.rentagleClick1 {
+		top: 20px;
+    -o-transform: rotate(405deg);
+    -moz-transform: rotate(405deg);
+    -webkit-transform: rotate(405deg);
+    -ms-transform: rotate(405deg);
+    transform: rotate(405deg);
 }
-
-.menubar {
-	position: fixed;	
-	top: 0;
-  left: 0;
-  height: 120px;
-  width: 100%;
-  background-color: #fff;
-  z-index: 99;
+nav .humberger .rentagle2.rentagleClick2 {
+    opacity: 0;
+}
+nav .humberger .rentagle3.rentagleClick3 {
+		top: 20px;
+    -o-transform: rotate(-405deg);
+    -moz-transform: rotate(-405deg);
+    -webkit-transform: rotate(-405deg);
+    -ms-transform: rotate(-405deg);
+    transform: rotate(-405deg);
 }
 
 /* header */
@@ -130,13 +164,12 @@ nav .humberger .rentagle3:hover {
 
 .hometown {
 	padding: 80px 30px;
-	background-color: #91AD70;
+	background-color: #B5CAA0;
 	color: #333;
 }
 
 .hometown-map {
 	width: 100%;
-	background-color: #fff;
 }
 
 .heading {
@@ -227,8 +260,36 @@ nav .humberger .rentagle3:hover {
 	  padding-right: 0.6rem;
 	  padding-top: 0.2rem;
 	}
+	nav.opened {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #efeff0;
+    top: 0;
+    left: 0;
+    -webkit-transition: none;
+    transition: none;
+  }
+	nav.opened ul {
+	    display: block;
+	    margin-top: 32px;
+	}
+	nav.opened ul li a {
+	    font-size: 2.4rem;
+	    text-align: center;
+	    display: block;
+	    padding: 10.66667px 0 6.4px;
+	}
+	nav.opened .humberger {
+		margin: 20px;
+	}
 	.menubar {
-	  height: 85px;
+		position: fixed;	
+		top: 0;
+	  left: 0;
+		height: 85px;
+	  width: 100%;
+	  z-index: 99;
 	}
 	.site-title-sub::before{
 		display: block;
