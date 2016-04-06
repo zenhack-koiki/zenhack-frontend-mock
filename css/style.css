@@ -17,14 +17,33 @@ body {
 }
 
 a {
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    color: #1a1919;
-    text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #113285;
+  text-decoration: none;
+	position: relative;
+	display: inline-block;    
+}
+
+a::after {
+	position: absolute;
+	bottom: .3em;
+	right: 0;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: #666;
+	opacity: 0;
+	transition: .3s;
+}
+
+a:hover::after {
+	bottom: 2px;
+	opacity: 1;
 }
 
 ol, ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* color schema */
@@ -267,12 +286,14 @@ nav .humberger .rentagle3.rentagleClick3 {
     background: #efeff0;
     top: 0;
     left: 0;
+    padding:0;
     -webkit-transition: none;
     transition: none;
   }
 	nav.opened ul {
 	    display: block;
 	    margin-top: 32px;
+    padding: 5px;
 	}
 	nav.opened ul li a {
 	    font-size: 2.4rem;
