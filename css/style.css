@@ -181,6 +181,24 @@ nav .humberger .rentagle3.rentagleClick3 {
 	color: #333;
 }
 
+/* grid */
+.gridmaster {
+  display: table;
+  width: 100%;
+}
+
+.grid {
+  display: table-cell;
+  background-color: #666;
+  width: 33.3%;
+  padding: 0;
+}
+
+.grid img {
+	width: 100%;
+	vertical-align:bottom;
+}
+
 .hometown {
 	padding: 80px 30px;
 	background-color: #B5CAA0;
@@ -346,24 +364,14 @@ nav .humberger .rentagle3.rentagleClick3 {
 	.description {
 		line-height: 1.8;
 	}
-	.works-wrapper,
-	.work-box {
-		display: block;
-	}
-	.work-image {
-		display: none;
-	}
-	.work-description {
-		position: relative;
-	}
-	.work-box::after {
-		top: 0;
-		height: 100%;
-		background-size: contain;
-		background-color: #fff;
-		background-position: center;
-		transform: scaleY(1);
-	}
+	.gridmaster {
+    display: block;
+  }
+  .grid {
+  	width: 100%;
+    display: block;
+    padding: 0px;
+  }
 	.favorites-wrapper,
 	.favorite-box {
 		display: block;
