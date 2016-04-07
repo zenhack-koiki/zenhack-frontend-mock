@@ -86,11 +86,12 @@ nav {
 
 nav ul {
 	margin-top: 15px;
-  display: block;
+	display: none;
   opacity: 0;
 }
 
 nav.opened ul {
+	display: block;
 	opacity: 1;
 }
 
@@ -192,10 +193,22 @@ nav .humberger .rentagle3.rentagleClick3 {
   background-color: #666;
   width: 33.3%;
   padding: 0;
+  position: relative;
+}
+
+.grid p {
+	position: absolute;
+	top: 70%;
+	left: 5%;
+	margin: 0;
+	font-size: 2.0rem;
+	z-index: 10;
 }
 
 .grid img {
 	width: 100%;
+	filter:brightness(60%);
+	-webkit-filter: brightness(60%);
 	vertical-align:bottom;
 }
 
