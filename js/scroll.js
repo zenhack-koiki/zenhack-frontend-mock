@@ -1,4 +1,6 @@
 $(function() {
+
+	// Scroll
   var time = 400;
 
   // Get all of anchor link
@@ -13,5 +15,15 @@ $(function() {
     $('.rentagle2').toggleClass('rentagleClick2');
     $('.rentagle3').toggleClass('rentagleClick3');
     return false;
+  });
+
+  // Delayload
+  var setElm = $('.article > .gridmaster > .grid '),
+  		delayTime = 600;
+
+  $(window).load(function(){
+  	setElm.each(function(i){
+  		$(this).delay(i * delayTime).css({visibility:'visible',opacity:'0'}).animate({opacity:'1'}, 1000);
+  	});
   });
 });

@@ -247,9 +247,10 @@ nav .humberger .rentagle3.rentagleClick3 {
 
 .about-text,
 .description {
-	margin: 30px 0;
-	line-height: 2.5;
+	margin: 30px 200px;
+	line-height: 1.7;
 	text-align: left;
+	font-family: 'Metrophobic', sans-serif;
 }
 
 /* favorites */
@@ -342,6 +343,11 @@ nav .humberger .rentagle3.rentagleClick3 {
 		height: 85px;
 	  width: 100%;
 	  z-index: 99;
+	}
+	.about-text,
+	.description {
+		margin: 30px 0;
+		line-height: 2.5;
 	}
 	.site-title-sub::before{
 		display: block;
