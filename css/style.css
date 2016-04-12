@@ -198,6 +198,7 @@ nav .humberger .rentagle3.rentagleClick3 {
   width: 33.3%;
   padding: 0;
   position: relative;
+	visibility:hidden;
 }
 
 .grid p {
