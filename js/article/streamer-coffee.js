@@ -5,7 +5,7 @@ $(function() {
 	var markers = [] ;
 	// options
 	var mapOptions = {
-		zoom: 17 ,
+		zoom: 15 ,
 		center: latlng ,
 		draggable: false ,
 		scrollwheel: false,
