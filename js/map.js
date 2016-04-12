@@ -8,7 +8,7 @@ $(function() {
 		zoom: 13 ,
 		center: latlng ,
 		draggable: false ,
-		scroll_wheel: false,
+		scrollwheel: false,
 	};
 
 	var map = new google.maps.Map( canvas , mapOptions ) ;

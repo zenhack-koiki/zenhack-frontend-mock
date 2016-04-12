@@ -9,8 +9,6 @@ html {
 }
 
 body {
-	background-color: #fff;
-	color: #666;
 	text-align: center;
 	font-size: 1.8rem;
 	font-family: 'Telex', "Hiragino Kaku Gothic ProN", Meiryo, san-serif;
@@ -19,7 +17,6 @@ body {
 a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: #113285;
   text-decoration: none;
 	position: relative;
 	display: inline-block;    
@@ -32,7 +29,6 @@ a::after {
 	content: '';
 	width: 100%;
 	height: 2px;
-	background-color: #666;
 	opacity: 0;
 	transition: .3s;
 }
@@ -44,15 +40,6 @@ a:hover::after {
 
 ol, ul {
   list-style: none;
-}
-
-/* color schema */
-.akabeni {
-	color: #CB4042;
-}
-
-.sora {
-	color: #58B2DC;
 }
 
 /* logo part */
@@ -120,7 +107,6 @@ nav .humberger .rentagle3
 	display: block;
   width: 40px;
   height: 4px;
-  background: #58B2DC;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: absolute;
@@ -130,7 +116,6 @@ nav .humberger .rentagle2 {
 	top: 20px;
 	left: 10px;
 	width: 20px;
-	background-color: #CB4042;
 }
 
 nav .humberger .rentagle3 {
@@ -172,14 +157,11 @@ nav .humberger .rentagle3.rentagleClick3 {
 
 .site-description {
 	margin-bottom: 50px;
-	color: #888;
 }
 
 /* about */
 .about {
 	padding: 80px 30px;
-	background-color: #D7C4BB;
-	color: #333;
 }
 
 .sns {
@@ -194,7 +176,6 @@ nav .humberger .rentagle3.rentagleClick3 {
 
 .grid {
   display: table-cell;
-  background-color: #666;
   width: 33.3%;
   padding: 0;
   position: relative;
@@ -214,7 +195,6 @@ nav .humberger .rentagle3.rentagleClick3 {
 	position: absolute;
 	top: 2%;
 	right: 2%;
-	color: #fff;
 	text-align: right;
 	font-size: 1.8rem;
 }
@@ -222,7 +202,6 @@ nav .humberger .rentagle3.rentagleClick3 {
 .grid .article2 {
 	top: 2%;
 	right: 2%;
-	color: #828282;
 	text-align: right;
 	font-size: 1.8rem;
 }
@@ -231,7 +210,6 @@ nav .humberger .rentagle3.rentagleClick3 {
 	position: absolute;
 	top: 2%;
 	left: 2%;
-	color: #828282;
 	text-align: left;
 	font-size: 1.8rem;
 }
@@ -250,8 +228,6 @@ nav .humberger .rentagle3.rentagleClick3 {
 
 .hometown {
 	padding: 80px 30px;
-	background-color: #B5CAA0;
-	color: #333;
 }
 
 .hometown-map {
@@ -292,8 +268,6 @@ nav .humberger .rentagle3.rentagleClick3 {
 /* favorites */
 .favorites {
 	padding: 80px 0;
-	background-color: #fff;
-	color: #333;	
 }
 
 .favorites-wrapper {
@@ -332,9 +306,7 @@ nav .humberger .rentagle3.rentagleClick3 {
 	height: 0 ;
 	margin: 0 ;
 	padding: 0 0 56.25% ;
-
 	overflow: hidden ;
-
 	position: relative ;
 	top: 0 ;
 	left: 0 ;
@@ -345,10 +317,8 @@ nav .humberger .rentagle3.rentagleClick3 {
 	position: absolute ;
 	top: 0 ;
 	left: 0 ;
-
 	width: 100% ;
 	height: 100% ;
-
 	margin: 0 ;
 	padding: 0 ;
 }
@@ -384,7 +354,6 @@ nav .humberger .rentagle3.rentagleClick3 {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background: #efeff0;
     top: 0;
     left: 0;
     padding:0;
@@ -404,14 +373,6 @@ nav .humberger .rentagle3.rentagleClick3 {
 	}
 	nav.opened .humberger {
 		margin: 20px;
-	}
-	.menubar {
-		position: fixed;	
-		top: 0;
-	  left: 0;
-		height: 85px;
-	  width: 100%;
-	  z-index: 99;
 	}
 	.about-text,
 	.description {
