@@ -1,0 +1,49 @@
+.article-core {
+	padding: 80px 0px;
+}
+
+.article-core h2{
+	font-family: 'Graduate', cursive;
+}
+
+.pre-description {
+	margin: 30px;
+	line-height: 1.7;
+	text-align: left;
+	font-family: 'Metrophobic', sans-serif;
+	font-size: 2.5rem;
+}
+
+.description {
+	margin: 30px;
+	line-height: 1.7;
+	text-align: left;
+	font-family: 'Metrophobic', sans-serif;
+}
+
+.article-core img {
+	width: 100%;
+	vertical-align:bottom;
+}
+
+.grid p.articlea {
+	position: absolute;
+	top:none;
+	top: 45%;
+	right: 2%;
+	text-align: right;
+	font-size: 2.2rem;
+}
+
+.grid .article-title{
+	font-size: 3.0rem;
+	font-family: 'Graduate', cursive;
+}
+
+/* for smartphone */
+@media (max-width: 768px) {
+	.pre-description {
+		font-size: 2.0rem;
+		line-height: 2.0;
+	}
+}
