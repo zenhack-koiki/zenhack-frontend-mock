@@ -12,6 +12,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 	<title>takahirofujii.com</title>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
+	<link href='https://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Telex' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -22,6 +23,8 @@
 	<script type="text/javascript" src="./js/humberger.js"></script>
 	<script type="text/javascript" src="./js/animation.js"></script>
 	<script type="text/javascript" src="./js/scroll.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLOVh2tWsopa68igsXOoUewsrCNicJsQA"></script>
+	<script type="text/javascript" src="./js/map.js"></script>
 </head>
 <body>
 <div class="menubar">
@@ -59,25 +62,16 @@
 <section class="article" id="article">
 	<div class="gridmaster">
 		<div class="grid">
-		<p class="sora">Komazawa Park<br>Street basket ball court.</p>
-		<img src="./images/basketball-sample.png">
+		<p class="article1">Cafe<br><span class="article-title">STREAMER COFFEE COMPANY</span><br>Gakugei-Daigaku</p>
+		<img src="./images/tumbnail-streamer.jpg">
 		</div>
 		<div class="grid">
-		<img src="./images/cafe-sample.png">
+		<p class="article2">Japanese Basketball Brand/Shop<br><span class="article-title">"RYZM"</span><br>Komazawa-Daigaku<br>(coming soon)</p>
+		<img src="./images/tumbnail-ryzm.jpg">
 		</div>
 		<div class="grid">
-		<img src="./images/fashion-sample.png">
-		</div>
-	</div>
-	<div class="gridmaster">
-		<div class="grid">
-		<img src="./images/ramen-sample.png">
-		</div>
-		<div class="grid">
-		<img src="./images/cafe-sample2.png">
-		</div>
-		<div class="grid">
-		<img src="./images/cafe-sample3.png">
+		<p class="article3">Japanese Street Basketball Court<br><span class="article-title">KOMAZAWA<br>OLYMPIC<br>PARK</span><br>Komazawa-Daigaku<br>(coming soon)</p>
+		<img src="./images/tumbnail-street-komazawa.jpg">
 		</div>
 	</div>
 </section>
@@ -89,7 +83,7 @@
 		My favorite things are basketball, cafe, fashion, food(especially ramen), drinking, and so on.<br>
 		I've been living in Tokyo for 30 years. In this site, I'd like to introduce my hometown with my hobbies especially Gakugeidaigaku.<br>
 		A lot of people already created site to introduce popular spot, things in Tokyo. This site, I'd like to introduce my personally favorite spot, and share what I do in daily life.<br>
-		I really like taking a trip to feel daily life. When I take trip, I would like to know what kind of daily life local folks are spending. Especially who has a common interest.<br> That's why i create this site to introduce my favorite spot. I wish it becomes useful information for visitor to Japan who has similat sensibility to me.
+		I really like taking a trip to feel daily life. When I take trip, I would like to know what kind of daily life local folks are spending. Especially who has a common interest.<br> That's why I created this site to introduce my favorite spot. I wish it becomes useful information for visitor to Japan who has similat sensibility to me.
 	</p>
 </section>
 <section class="hometown" id="hometown">
@@ -97,10 +91,17 @@
 	<p class="description">
 		<img class="hometown-map" src="./images/map1.png">
 		About my hometown, the nearest train station is "Gakugeidaigaku".<br>
+		Address: 2-21-8, Takaban, Meguro-ku, Tokyo, Japan
+		<br>
+	</p>
+		<!--Google Map-->
+		<div class="map-embed">
+			<div id="map-canvas">Map area</div>
+		</div>
+		<!--Google Map-->
+	<p class="description">
 		Here is about 10minutes from <a href="http://www.japan-guide.com/e/e3007.html" target="_blank">Shibuya</a> by Toyoko-Line.<br>
 		Only <a href="https://en.wikipedia.org/wiki/T%C5%8Dky%C5%AB_T%C5%8Dyoko_Line" target="_blank">local and express</a> stop Gakugeidaigaku.<br>
-		<img class="hometown-map" src="./images/map2.png"> <!-- For PC-->
-		<img class="hometown-map" src="./images/map3-3.png"> <!-- For SP-->
 		Mainly I'm living between Gakugeidaigaku to Shibuya.<br>
 		text text text text text text text text text text text.<br>
 		text text text text text text text text text text text.<br>
