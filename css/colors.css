@@ -38,7 +38,8 @@ nav .humberger .rentagle2 {
 	color: #080808; /* KURO */
 }
 
-.grid .article1 {
+.grid .article1,
+.grid .go-to-article {
 	color: #FFFFFB; /* GOFUN */
 }
 
@@ -48,17 +49,17 @@ nav .humberger .rentagle2 {
 }
 
 .about {
-	background-color: rgba(203,64,66,0.3); /* AKABENI 0.3 */
+	background-color: rgba(203,64,66,0.2); /* AKABENI 0.2 */
 	color: #080808; /* KURO */
 }
 
 .hometown {
-	background-color: rgba(88,178,200,0.3); /* SORA 0.3 */
+	background-color: rgba(88,178,200,0.2); /* SORA 0.2 */
 	color: #080808; /* KURO */
 }
 
 .favorites {
-	background-color: rgba(123,162,63,0.3);/* MOEGI 0.3 */
+	background-color: rgba(123,162,63,0.2);/* MOEGI 0.2 */
 	color: #080808; /* KURO */
 }
 

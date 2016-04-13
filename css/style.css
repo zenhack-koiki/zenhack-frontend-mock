@@ -215,6 +215,10 @@ nav .humberger .rentagle3.rentagleClick3 {
 	font-size: 1.8rem;
 }
 
+.grid .go-to-article {
+	display: none;
+}
+
 .grid .article-title{
 	font-size: 2.8rem;
 	font-family: 'Graduate', cursive;
@@ -436,6 +440,14 @@ nav .humberger .rentagle3.rentagleClick3 {
     display: block;
     padding: 0px;
   }
+	.grid .go-to-article {
+		position: absolute;
+		display: block;
+		top: 82%;
+		right: 2%;
+		text-align: right;
+		font-size: 3.8rem;
+	}
 	.favorites-wrapper,
 	.favorite-box {
 		display: block;
