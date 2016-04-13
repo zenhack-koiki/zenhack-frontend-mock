@@ -26,4 +26,11 @@ $(function() {
   		$(this).delay(i * delayTime).css({visibility:'visible',opacity:'0'}).animate({opacity:'1'}, 1000);
   	});
   });
+
+  //FastClick load
+	if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+    }, false);
+}
 });
