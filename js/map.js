@@ -7,7 +7,6 @@ $(function() {
 	var mapOptions = {
 		zoom: 13 ,
 		center: latlng ,
-		draggable: false ,
 		scrollwheel: false,
 	};
 

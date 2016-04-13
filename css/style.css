@@ -237,6 +237,10 @@ nav .humberger .rentagle3.rentagleClick3 {
   -ms-transform: scale(1.1);
 }
 
+.grid a::after {
+	display: none;
+}
+
 .hometown {
 	padding: 80px 30px;
 }
