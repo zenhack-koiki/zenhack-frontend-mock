@@ -32,5 +32,11 @@ $(function() {
     document.addEventListener('DOMContentLoaded', function() {
         FastClick.attach(document.body);
     }, false);
-}
+	}
+
+	//Lazyload load
+  $("img.lazyload").lazyload({
+  	effect: "fadeIn",
+  	effect_speed: 500
+  });
 });

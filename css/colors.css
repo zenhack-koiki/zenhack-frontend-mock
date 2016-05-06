@@ -39,11 +39,11 @@ nav .humberger .rentagle2 {
 }
 
 .grid .article1,
+.grid .article2,
 .grid .go-to-article {
 	color: #FFFFFB; /* GOFUN */
 }
 
-.grid .article2,
 .grid .article3 {
 	color: #656765; /* NIBI */
 }
