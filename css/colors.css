@@ -1,6 +1,6 @@
 body {
 	background-color: rgba(255,255,251,1);/* GOFUN */
-	color: #656765; /* NIBI */
+	color: #FFFFFB;; /* NIBI */
 }
 
 a {
@@ -34,8 +34,16 @@ nav .humberger .rentagle2 {
 	background-color: #CB4042; /* AKABENI */
 }
 
+.site-title {
+	color:#FFFFFB;
+}
+
 .site-description {
-	color: #080808; /* KURO */
+	color: #FFFFFB; /* KURO */
+}
+
+.button {
+	background-color: #080808; /* KURO */
 }
 
 .grid .article1,

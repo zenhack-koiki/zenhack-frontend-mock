@@ -19,7 +19,7 @@ a {
   transition: all 0.3s ease;
   text-decoration: none;
 	position: relative;
-	display: inline-block;    
+	display: inline-block;
 }
 
 a::after {
@@ -146,8 +146,10 @@ nav .humberger .rentagle3.rentagleClick3 {
 
 /* header */
 .header {
-	padding: 80px 30px 80px;
+	padding: 80px 30px 380px;
 	min-height: 360px;
+	background-image: url(../images/test.gif);
+  background-size: cover;
 }
 
 .site-title {
@@ -157,6 +159,25 @@ nav .humberger .rentagle3.rentagleClick3 {
 
 .site-description {
 	margin-bottom: 50px;
+}
+
+.buttons .button {
+  margin: 10px;
+}
+
+.button {
+	display: inline-block;
+	width: 200px;
+	padding: 20px;
+	border-radius: 4px;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-size: 1.2rem;
+}
+
+.button:hover {
+	opacity: 0.9;
 }
 
 /* about */
